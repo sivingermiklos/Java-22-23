@@ -87,7 +87,11 @@ public class StringMetodusok {
         System.out.println(szoveg.substring(3,6));
         
         
+        // ---------- FELADATOK ----------
+        
         //1. feladat
+        System.out.println("--------1. feladat--------");
+        
         String fullName, firstName, lastName, classId;
         
         Scanner bill = new Scanner(System.in);
@@ -95,27 +99,47 @@ public class StringMetodusok {
         fullName = bill.nextLine();
 
         //2. feladat
+        System.out.println("--------2. feladat--------");
+
         firstName = fullName.trim().split(" ")[0];
         lastName = fullName.trim().split(" ")[1];
         System.out.println(firstName);
         System.out.println(lastName);
         
         //3. feladat
+        System.out.println("--------3. feladat--------");
+        
         System.out.print("Add meg az osztalyazonositodat: ");
         classId = bill.nextLine();
-        
-        String classIdEv = classId.substring(0,4);
-        String classIdTag = classId.substring(4,6);
+        String classIdTag = classId.substring(4,5);
         
         //4. feladat
+        System.out.println("--------4. feladat--------");
+        
         if (classIdTag.startsWith("e")){
             System.out.println(classId.replaceFirst("e","E"));
         }
-        //5. feladat
+        //5. feladat   
+        System.out.println("--------5. feladat--------");
+        
+        String classIdEv = classId.substring(0,3);
         int evfolyam =Integer.parseInt(classIdEv);
         
         if (evfolyam < 2022){
             System.out.println(classId.toUpperCase());
+        }
+        
+        //6. feladat
+        System.out.println("--------6. feladat--------");
+        
+        char elso = classId.charAt(4);
+        char masodik =  classId.charAt(5);
+        
+        if (Character.isUpperCase(elso) && Character.isUpperCase(masodik)) {
+            System.out.println(classId+" esti osztály");
+        }
+        else{
+            System.out.println(classId+" nem esti osztály");
         }
     }
 }
