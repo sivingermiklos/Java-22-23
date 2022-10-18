@@ -5,6 +5,8 @@
  */
 package stringmetodusok;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user3
@@ -83,5 +85,37 @@ public class StringMetodusok {
         //stringből substring kivétele
         System.out.println(szoveg.substring(3));
         System.out.println(szoveg.substring(3,6));
+        
+        
+        //1. feladat
+        String fullName, firstName, lastName, classId;
+        
+        Scanner bill = new Scanner(System.in);
+        System.out.print("Add meg a diák nevét: ");
+        fullName = bill.nextLine();
+
+        //2. feladat
+        firstName = fullName.trim().split(" ")[0];
+        lastName = fullName.trim().split(" ")[1];
+        System.out.println(firstName);
+        System.out.println(lastName);
+        
+        //3. feladat
+        System.out.print("Add meg az osztalyazonositodat: ");
+        classId = bill.nextLine();
+        
+        String classIdEv = classId.substring(0,4);
+        String classIdTag = classId.substring(4,6);
+        
+        //4. feladat
+        if (classIdTag.startsWith("e")){
+            System.out.println(classId.replaceFirst("e","E"));
+        }
+        //5. feladat
+        int evfolyam =Integer.parseInt(classIdEv);
+        
+        if (evfolyam < 2022){
+            System.out.println(classId.toUpperCase());
+        }
     }
 }
