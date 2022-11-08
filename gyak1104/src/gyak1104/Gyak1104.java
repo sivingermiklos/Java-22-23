@@ -35,15 +35,20 @@ public class Gyak1104 {
     }
     
     
-    // 3. feladat
-    
+    // 4. feladat
+    public static double gulaTerfogat(double oldalAlap, double oldalMagassag){
+        // (a*b)*magasság / 3;
+        double gulaTerfogat = oldalAlap * oldalAlap * oldalMagassag / 3;
+        
+        return gulaTerfogat;
+    }    
     
     // MAIN
     public static void main(String[] args) {
         
         Scanner szamBekeres = new Scanner(System.in);
 
-        // ---------- 1. FELADAT ----------
+        // ---------- 1. FELADAT ---------- (két szám átlaga)
         feladat();
         
         // A két szám bekérése
@@ -56,7 +61,7 @@ public class Gyak1104 {
         System.out.println("A ket szam atlaga: " + atlag(elsoSzam, masodikSzam));
         
         
-        // ---------- 2. FELADAT ----------
+        // ---------- 2. FELADAT ---------- (random szám generálása bekért tartományból)
         feladat();
         
         // A két határ bekérése
@@ -76,7 +81,30 @@ public class Gyak1104 {
         }
         
         
-        // ---------- 3. FELADAT ----------
+        // ---------- 3. FELADAT ---------- (tömb feltöltése random számokkal)
         feladat();
-    }
+
+        // Lista deklarálása
+        int[] randomSzamLista = new int[20];
+
+        // Lista feltöltése random számokkal
+        for (int i = 0; i < 20; i++){
+            randomSzamLista[i] = randomSzam(felsoHatar,alsoHatar);
+        }
+
+        // Ellenőrző print
+        for (int i = 0; i < 20; i++){
+            System.out.print(randomSzamLista[i] + " ");
+        }
+        
+        
+        // ---------- 4. FELADAT ---------- (négyzet alapú gúla térfogata)
+        
+        System.out.print("\nGula alapja: ");
+        double oa = szamBekeres.nextDouble();
+        System.out.print("Gula magassaga: ");
+        double om = szamBekeres.nextDouble();
+        
+        System.out.println("A negyzet alapu gula terfogata: "+gulaTerfogat(oa,om));
+    } 
 }
