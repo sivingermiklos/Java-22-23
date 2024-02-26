@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="150.0" prefWidth="350.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudoku.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox prefHeight="25.0" prefWidth="310.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="110.0" text="Új feladvány mérete:">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin></Label>
+        <Button fx:id="minus" onAction="#minus" prefHeight="25.0" prefWidth="25.0" text="-" />
+        <TextField fx:id="number" alignment="CENTER" prefHeight="25.0" prefWidth="25.0" text="4">
+         <HBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </HBox.margin></TextField>
+        <Button fx:id="plus" onAction="#add" prefHeight="25.0" prefWidth="25.0" text="+" /><HBox.margin>
+        <Insets>
+
+        </Insets>
+    </HBox.margin>
+    </HBox>
+     <Label alignment="CENTER" prefHeight="15.0" prefWidth="80.0" text="Kezdőállapot:" />
+     <TextField fx:id="kezdoallapot" onKeyTyped="#kezdoallapot" prefHeight="24.0" prefWidth="310.0" />
+    <HBox prefHeight="30.0" prefWidth="310.0">
+        <Label minWidth="40.0" prefHeight="33.0" prefWidth="40.0" text="Hossz: " textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+        <Label fx:id="hossz" minWidth="25.0" prefHeight="33.0" prefWidth="15.0" text="0" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+      <BorderPane prefHeight="25.0" prefWidth="217.0" />
+        <Button alignment="CENTER" onAction="#checkSudoku" contentDisplay="CENTER" minWidth="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Ellenőrzés" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+           <HBox.margin>
+               <Insets />
+           </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>

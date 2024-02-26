@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER_LEFT" prefHeight="186.0" prefWidth="366.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.totos.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label alignment="CENTER" text="Kérem a forduló eredményeit [1, 2 ,X]:" />
+    <TextField fx:id="eredmenyField" prefHeight="25.0" prefWidth="200.0" onKeyTyped="#ellenorzes">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+    </TextField>
+    <HBox prefHeight="20.0" prefWidth="326.0">
+        <CheckBox fx:id="nemjoCount" disable="true" mnemonicParsing="false"/>
+        <Label text="Nem megfelelő a karakterek száma (">
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </Label>
+        <Label fx:id="nemjoHosszLabel" text="0"/>
+        <Label text=")"/>
+    </HBox>
+    <HBox prefHeight="20.0" prefWidth="326.0">
+        <CheckBox fx:id="nemjoChar" disable="true" mnemonicParsing="false"/>
+        <Label text="Helytelen karakter az eredményben (">
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </Label>
+        <Label fx:id="nemjoCharLabel"/>
+        <Label text=")"/>
+    </HBox>
+    <Button fx:id="mentesButton" disable="true" mnemonicParsing="false" text="Eredmények mentése" />
+</VBox>
