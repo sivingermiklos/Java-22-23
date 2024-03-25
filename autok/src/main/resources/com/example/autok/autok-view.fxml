@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="360.0" prefWidth="320.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autok.AutokController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label alignment="CENTER" contentDisplay="CENTER" text="Autókölcsönző" textAlignment="CENTER">
+        <font>
+            <Font name="Comic Sans MS" size="24.0" />
+        </font>
+    </Label>
+    <FlowPane prefHeight="28.0" prefWidth="280.0">
+        <children>
+          <Label alignment="CENTER" contentDisplay="CENTER" text="Márka:" textAlignment="CENTER">
+              <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+              </font>
+            <FlowPane.margin>
+               <Insets right="5.0" />
+            </FlowPane.margin>
+          </Label>
+            <TextField fx:id="markaTextField" prefHeight="20.0" prefWidth="200.0" />
+        </children>
+    </FlowPane>
+   <FlowPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+          <Label alignment="CENTER" contentDisplay="CENTER" text="Típus:" textAlignment="CENTER">
+              <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+              </font>
+              <FlowPane.margin>
+                  <Insets right="5.0" />
+              </FlowPane.margin>
+          </Label>
+          <TextField fx:id="tipusTextField" prefHeight="25.0" prefWidth="207.0" />
+      </children>
+   </FlowPane>
+    <FlowPane prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Hengerűrtartalom:" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <FlowPane.margin>
+                    <Insets right="5.0" />
+                </FlowPane.margin>
+            </Label>
+            <TextField fx:id="hengerutTextField" prefHeight="25.0" prefWidth="112.0" />
+        </children>
+    </FlowPane>
+    <FlowPane prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Férőhely:" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <FlowPane.margin>
+                    <Insets right="5.0" />
+                </FlowPane.margin>
+            </Label>
+            <TextField fx:id="ferohelyTextField" prefHeight="25.0" prefWidth="182.0" />
+        </children>
+    </FlowPane>
+    <FlowPane prefHeight="200.0" prefWidth="200.0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Rendszám:" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <FlowPane.margin>
+                    <Insets right="5.0" />
+                </FlowPane.margin>
+            </Label>
+            <TextField fx:id="rendszamTextField" prefHeight="25.0" prefWidth="174.0" />
+        </children>
+    </FlowPane>
+    <Button fx:id="rogzitesButton" mnemonicParsing="false" onAction="#rogzit" text="Rögzítés">
+        <font>
+            <Font name="Comic Sans MS" size="12.0" />
+        </font>
+    </Button>
+    <BorderPane prefHeight="32.0" prefWidth="280.0" />
+</VBox>

@@ -53,7 +53,7 @@ public class LottoController {
         genNum3 = getRandomNumber();
         genNum4 = getRandomNumber();
         genNum5 = getRandomNumber();
-        kisorsoltLottoSzam1.setText(String.valueOf(genNum1));
+        kisorsoltLottoSzam1 .setText(String.valueOf(genNum1));
         kisorsoltLottoSzam2.setText(String.valueOf(genNum2));
         kisorsoltLottoSzam3.setText(String.valueOf(genNum3));
         kisorsoltLottoSzam4.setText(String.valueOf(genNum4));

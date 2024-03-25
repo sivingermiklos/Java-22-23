@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane maxHeight="400.0" maxWidth="500.0" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.colorchanger.HelloController">
+    <Circle fx:id="circle" fill="DODGERBLUE" layoutX="84.0" layoutY="286.0" onMouseClicked="#changeCircleColor" radius="70.0" stroke="BLACK" strokeType="INSIDE" />
+    <Ellipse fx:id="ellipse" fill="PURPLE" layoutX="184.0" layoutY="39.0" onMouseClicked="#changeEllipseStroke" radiusX="25.0" radiusY="25.0" stroke="BLACK" strokeType="INSIDE" />
+    <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="RED" height="75.0" layoutX="146.0" layoutY="73.0" onMouseClicked="#changeRectangleColor" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+   <Circle fx:id="circle2" fill="WHITE" layoutX="74.0" layoutY="111.0" radius="60.0" stroke="BLACK" strokeType="INSIDE" />
+   <ColorPicker fx:id="colorPicker" layoutX="12.0" layoutY="14.0" onAction="#changeCircle2Color" />
+   <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="5.0" fill="#ffee1f" height="25.0" layoutX="238.0" layoutY="174.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+   <Slider fx:id="scaleXSlider" blockIncrement="1.0" layoutX="238.0" layoutY="346.0" max="125.0" min="25.0" onMouseClicked="#changeRectangle2Scale" prefHeight="37.0" prefWidth="200.0" showTickLabels="true" showTickMarks="true" value="25.0" />
+   <Slider fx:id="scaleYSlider" blockIncrement="1.0" layoutX="198.0" layoutY="156.0" max="125.0" min="25.0" onMouseClicked="#changeRectangle2Scale" orientation="VERTICAL" prefHeight="200.0" prefWidth="40.0" showTickLabels="true" showTickMarks="true" value="25.0" />
+    <ImageView fitHeight="167.0" fitWidth="165.0" layoutX="280.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="https://c.tenor.com/5ITagwP0nXIAAAAd/tenor.gif" />
+    </ImageView>
+    <ImageView fx:id="viccesmajmosgif" fitHeight="300.0" fitWidth="400.0" layoutX="600.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeGif">
+        <Image url="https://i.makeagif.com/media/5-12-2021/w3evu_.gif" />
+    </ImageView>
+</Pane>
