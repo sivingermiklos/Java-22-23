@@ -1,0 +1,26 @@
+.root {
+    -fx-background-color: #E1E4CB;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 14px;
+}
+
+.textfield {
+    -fx-background-color: #DBE0B5;
+    -fx-border-color: gray;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.buttonbg .radio{
+    -fx-background-color: #7C872C;
+}
+
+.buttonbg .checkbox {
+    -fx-accent-color:  #7C872C;
+}
+
+.textborder {
+    -fx-border-color: #BFC1AC;
+    -fx-border-width: 1;
+    -fx-padding: 3;
+}

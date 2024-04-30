@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<Pane prefHeight="240.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.valasztasokgui.ValasztasokController">
+    <Button layoutX="100.0" layoutY="5.0" mnemonicParsing="false" onMouseClicked="#fajlBeolvasas" text="Adatok beolvasása">
+      <textFill>
+         <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.045" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="0.3">
+                  <color>
+                     <Color red="1.0" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.1" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill></Button>
+    <Label layoutX="10.0" layoutY="40.0" text="Választókerület: " />
+    <Label layoutX="10.0" layoutY="75.0" text="Szavazatok: " />
+    <Label layoutX="10.0" layoutY="105.0" text="Vezetéknév: " />
+    <Label layoutX="10.0" layoutY="135.0" text="Utónév: " />
+    <Label layoutX="10.0" layoutY="165.0" text="Párt: " />
+    <TextField fx:id="kerulet" layoutX="100.0" layoutY="40.0" prefHeight="25.0" prefWidth="115.0" />
+    <TextField fx:id="szavazatok" layoutX="100.0" layoutY="70.0" prefHeight="25.0" prefWidth="115.0" />
+    <TextField fx:id="vezetekNev" layoutX="100.0" layoutY="100.0" prefHeight="25.0" prefWidth="115.0" />
+    <TextField fx:id="keresztNev" layoutX="100.0" layoutY="130.0" prefHeight="25.0" prefWidth="115.0" />
+    <TextField fx:id="part" layoutX="100.0" layoutY="160.0" prefHeight="25.0" prefWidth="115.0" />
+    <Button layoutX="105.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#addJelolt" text="Jelölt hozzáadása" textFill="LIME" />
+</Pane>

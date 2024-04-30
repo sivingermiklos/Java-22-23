@@ -1,0 +1,33 @@
+.root{
+    -fx-font-family: "Arial";
+}
+
+.img {
+    -fx-background-image: url("krisztian05.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.img:hover {
+    -fx-background-image: url("https://media.tenor.com/vCdJ2jWZp1IAAAAM/monkey-spinning-444hobi.gif");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.btn {
+    -fx-background-color: rgb(40, 200, 90);
+    -fx-font-size: 15px;
+    -fx-border-radius: 25px;
+}
+
+.btn:hover {
+    -fx-background-color: rgb(30, 150, 70);
+}
+
+.bejelentkezes {
+    -fx-font-size: 30px;
+}
+
+.textfield {
+    -fx-font-size: 15px;
+}

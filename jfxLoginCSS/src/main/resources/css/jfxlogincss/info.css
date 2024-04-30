@@ -1,0 +1,5 @@
+.root {
+    -fx-background-image: url("like.gif");
+    -fx-background-size: 500 300;
+    -fx-background-repeat: no-repeat;
+}

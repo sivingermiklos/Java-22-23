@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="260.0" prefWidth="365.0" spacing="20.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="css.javafxcss.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="325.0">
+               <children>
+                  <VBox prefHeight="59.0" prefWidth="90.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" styleClass="buttonbg" text="High" />
+                        <RadioButton mnemonicParsing="false" styleClass="buttonbg" text="Medium" />
+                        <RadioButton mnemonicParsing="false" styleClass="buttonbg" text="Low" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <TextField promptText="Your name" styleClass="textfield" />
+                        <PasswordField promptText="Your password" styleClass="textfield">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Pane prefHeight="51.0" prefWidth="100.0" />
+                        <ChoiceBox fx:id="cb" prefWidth="150.0" styleClass="buttonbg" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="325.0">
+               <children>
+                  <Button mnemonicParsing="false" styleClass="buttonbg" text="Accept" />
+                  <Button mnemonicParsing="false" styleClass="buttonbg" text="Decline">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label styleClass="textborder" text="Not Available">
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="19.0" prefWidth="325.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" styleClass="buttonbg" text="Normal">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" selected="true" styleClass="buttonbg" text="Checked">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <CheckBox allowIndeterminate="true" indeterminate="true" mnemonicParsing="false" styleClass="buttonbg" text="Undefined">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Label styleClass="textborder" text="Progress:">
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Slider>
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Slider>
+                  <ProgressIndicator progress="0.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </ProgressIndicator>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
