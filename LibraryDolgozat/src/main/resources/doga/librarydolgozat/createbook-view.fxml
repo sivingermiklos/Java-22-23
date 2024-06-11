@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="15" prefHeight="375.0" prefWidth="500.0" styleClass="pane" stylesheets="@book-form.css" vgap="15" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doga.librarydolgozat.NewBookController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="225.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="255.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="57.5" minHeight="57.5" prefHeight="57.5" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.0" minHeight="45.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="57.5" minHeight="57.5" prefHeight="57.5" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <Label styleClass="labels" text="Szerző:" GridPane.rowIndex="0">
+        <GridPane.margin>
+            <Insets left="10.0" />
+        </GridPane.margin></Label>
+    <Label styleClass="labels" text="Cím:" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets left="10.0" />
+        </GridPane.margin></Label>
+    <Label styleClass="labels" text="Kiadás éve:" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets left="10.0" />
+        </GridPane.margin></Label>
+    <Label styleClass="labels" text="Kategória:" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets left="10.0" />
+        </GridPane.margin></Label>
+    <Label styleClass="labels" text="Bevételezés időpontja:" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets left="10.0" />
+        </GridPane.margin></Label>
+    <TextField fx:id="author" maxHeight="45.0" maxWidth="250.0" minWidth="250.0" prefHeight="45.0" prefWidth="250.0" styleClass="inputs" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets right="10.0" />
+        </GridPane.margin></TextField>
+    <TextField fx:id="title" maxHeight="45.0" maxWidth="250.0" minWidth="250.0" prefHeight="45.0" prefWidth="250.0" styleClass="inputs" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets right="10.0" />
+        </GridPane.margin></TextField>
+    <TextField fx:id="year" maxHeight="45.0" maxWidth="250.0" minWidth="250.0" prefHeight="45.0" prefWidth="250.0" styleClass="inputs" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets right="10.0" />
+        </GridPane.margin></TextField>
+    <DatePicker fx:id="acquisitionDate" maxHeight="45.0" maxWidth="250.0" minWidth="250.0" prefHeight="45.0" prefWidth="250.0" styleClass="inputs" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <GridPane.margin>
+            <Insets right="10.0" />
+        </GridPane.margin></DatePicker>
+    <ComboBox fx:id="category" maxHeight="45.0" maxWidth="250.0" minWidth="250.0" prefHeight="45.0" prefWidth="250.0" styleClass="inputs" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <GridPane.margin>
+            <Insets right="10.0" />
+        </GridPane.margin></ComboBox>
+   <HBox alignment="CENTER_LEFT" maxWidth="250.0" prefWidth="250.0" GridPane.rowIndex="5">
+       <Button alignment="CENTER" maxWidth="75.0" mnemonicParsing="false" onMouseClicked="#showStockView" prefWidth="75.0" styleClass="btns" text="Készlet" />
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <GridPane.margin>
+         <Insets left="10.0" />
+      </GridPane.margin>
+   </HBox>
+    <HBox alignment="CENTER_RIGHT" maxWidth="250.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <Button alignment="CENTER" maxWidth="75.0" mnemonicParsing="false" onMouseClicked="#addNewBook" prefWidth="75.0" styleClass="btns" text="Mentés" />
+      <GridPane.margin>
+         <Insets right="10.0" />
+      </GridPane.margin>
+    </HBox>
+</GridPane>

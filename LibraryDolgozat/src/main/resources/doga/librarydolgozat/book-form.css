@@ -1,0 +1,36 @@
+.pane {
+    -fx-background-color: #e0f7fa;
+    -fx-border-color: #00838f;
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+}
+
+.labels {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #004d40;
+}
+
+.inputs {
+    -fx-background-color: #ffffff;
+    -fx-border-color :#00796b;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+.inputs:focused {
+    -fx-background-color: #b2dfdb;
+}
+
+.btns {
+    -fx-background-color: #00796b;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+.btns:hover {
+    -fx-background-color: #004d40;
+}
+.btns:pressed {
+    -fx-background-color: black;
+}

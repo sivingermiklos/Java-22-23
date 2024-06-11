@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" prefHeight="375.0" prefWidth="500.0" styleClass="pane" stylesheets="@book-form.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doga.librarydolgozat.StockController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="235.0" prefWidth="235.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="235.0" prefWidth="235.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="52.5" minHeight="52.5" prefHeight="52.5" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="270.0" minHeight="270.0" prefHeight="270.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="52.5" minHeight="52.5" prefHeight="52.5" vgrow="SOMETIMES" />
+    </rowConstraints>
+      <HBox prefHeight="53.0" prefWidth="288.0">
+            <Label prefHeight="47.0" prefWidth="235.0" text="Könyvek">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+      </HBox>
+        <HBox maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.rowIndex="1">
+                <Label alignment="TOP_CENTER" text="Szépirodalom" />
+            <GridPane.margin>
+                <Insets bottom="255.0" />
+            </GridPane.margin>
+        </HBox>
+        <HBox maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.rowIndex="1">
+                <Label text="Scifi" />
+            <GridPane.margin>
+                <Insets bottom="215.0" />
+            </GridPane.margin>
+        </HBox>
+        <HBox maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="175.0" />
+            </GridPane.margin>
+                <Label text="Nyelvkönyv" />
+        </HBox>
+        <HBox maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="135.0" />
+            </GridPane.margin>
+                <Label text="Tudomány" />
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="255.0" />
+            </GridPane.margin>
+                <Label fx:id="szepirodalom" textAlignment="RIGHT" />
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="215.0" />
+            </GridPane.margin>
+                <Label fx:id="scifi" textAlignment="RIGHT" />
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="175.0" />
+            </GridPane.margin>
+                <Label fx:id="nyelvkonyv" textAlignment="RIGHT" />
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" maxHeight="17.0" maxWidth="235.0" prefHeight="17.0" prefWidth="235.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="135.0" />
+            </GridPane.margin>
+                <Label fx:id="tudomany" textAlignment="RIGHT" />
+        </HBox>
+   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+      <children>
+              <Button alignment="CENTER" maxWidth="75.0" mnemonicParsing="false" onMouseClicked="#showCreateBookView" prefWidth="75.0" styleClass="btns" text="Vissza">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+   </HBox>
+</GridPane>

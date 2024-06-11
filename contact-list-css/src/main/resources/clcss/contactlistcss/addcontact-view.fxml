@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="260.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clcss.contactlistcss.AddContactController">
+    <Label layoutX="15.0" layoutY="35.0" text="Name:" />
+    <Label layoutX="15.0" layoutY="72.0" text="Phone:" />
+    <Label layoutX="15.0" layoutY="105.0" text="Email:" />
+    <TextField fx:id="name" layoutX="99.0" layoutY="30.0" />
+    <TextField fx:id="phone" layoutX="99.0" layoutY="65.0" />
+    <TextField fx:id="em" layoutX="99.0" layoutY="100.0" />
+    <Button layoutX="15.0" layoutY="150.0" mnemonicParsing="false" text="Back" />
+    <Button fx:id="saveContactButton" layoutX="190.0" layoutY="150.0" mnemonicParsing="false" onAction="#addContact" text="Save" />
+</Pane>
